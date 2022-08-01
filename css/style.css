@@ -51,6 +51,12 @@
     h2 {
         font-size: 36px;
     }
+
+    .navigation_header {
+        flex-direction: column;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -104,6 +110,12 @@
     h2 {
         font-size: 36px;
     }
+
+    .navigation_header {
+        flex-direction: column;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -139,6 +151,12 @@
     
     h2 {
         font-size: 64px;
+    }
+
+    .navigation_header {
+        flex-direction: row;
+        background: transparent;
+        padding: 0;
     }
 }
 
@@ -324,11 +342,12 @@ span {
 
 .navigation_header {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px 40px;
     position: absolute;
+    top: 0;
     left: 50%;
+    transform: translateX(-50%);
     max-width: 1554px;
 }
 
@@ -702,4 +721,90 @@ aside {
 
 .toggled {
     display: flex;
+}
+
+
+
+
+
+
+
+.folder {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: end;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+}
+
+.folder.active
+{
+  width: 200px;
+  height: 196px;
+  transition: height 0.5s, width 0.5s;
+  transition-delay: 0.5s, 0s;
+}
+
+.folder .menuToggle
+{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.folder .menuToggle::before
+{
+  content: '';
+  width: 22px;
+  height: 2px;
+  background: rgb(158, 157, 157);
+  position: absolute;
+  box-shadow: 0 10px rgb(158, 157, 157);
+  transition: 0.5s;
+}
+
+.folder .menuToggle::after
+{
+  content: '';
+  width: 22px;
+  height: 2px;
+  background: rgb(158, 157, 157);
+  position: absolute;
+  transform: translateY(-10px);
+  box-shadow: 0 10px rgb(158, 157, 157);
+  transition: 0.5s;
+}
+
+.folder.active .menuToggle::before
+{
+  box-shadow: 0 0px rgb(158, 157, 157);
+  transform: rotate(45deg);
+}
+
+.folder.active .menuToggle::after
+{
+  box-shadow: 0 0px rgb(158, 157, 157);
+  transform: translateY(0) rotate(-45deg);
+}
+
+.menuFolder
+{
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
