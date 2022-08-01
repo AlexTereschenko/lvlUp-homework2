@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Chronicle Display Semi';
+    src: url('../fonts/chronicleDisplay/ChronicleDisplay-Semi.woff2') format('woff2'),
+        url('../fonts/chronicleDisplay/ChronicleDisplay-Semi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/chronicleDisplay/ChronicleDisplay-Black.woff2') format('woff2'),
+        url('../fonts/chronicleDisplay/ChronicleDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/chronicleDisplay/ChronicleDisplay-Roman.woff2') format('woff2'),
+        url('../fonts/chronicleDisplay/ChronicleDisplay-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('../fonts/chronicleDisplay/ChronicleDisplay-LightItalic.woff2') format('woff2'),
+        url('../fonts/chronicleDisplay/ChronicleDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
