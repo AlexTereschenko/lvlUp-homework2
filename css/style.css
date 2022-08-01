@@ -214,6 +214,10 @@
     h2 {
         font-size: 64px;
     }
+
+    .img {
+        max-width: 566px;
+    }
 }
 
 /* Extra extra large devices (ultra wide desktops, 1400px and up) */
@@ -261,10 +265,6 @@
 
     .section {
         flex-direction: row;
-    }
-
-    .img {
-        max-width: 566px;
     }
 
     aside {
@@ -441,6 +441,7 @@ article {
 
 .section {
     display: flex;
+    align-items: center;
     margin: 0 auto;
     gap: calc(114px*var(--scale-factor));
 }
