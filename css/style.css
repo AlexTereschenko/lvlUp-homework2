@@ -787,6 +787,7 @@ aside {
   height: 196px;
   transition: height 0.5s, width 0.5s;
   transition-delay: 0.5s, 0s;
+  z-index: 10;
 }
 
 .folder .menuToggle
@@ -827,12 +828,14 @@ aside {
 {
   box-shadow: 0 0px rgb(158, 157, 157);
   transform: rotate(45deg);
+  background: #FBD784;
 }
 
 .folder.active .menuToggle::after
 {
   box-shadow: 0 0px rgb(158, 157, 157);
   transform: translateY(0) rotate(-45deg);
+  background: #FBD784;
 }
 
 .menuFolder
