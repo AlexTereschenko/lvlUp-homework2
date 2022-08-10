@@ -102,10 +102,6 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    /* .wrapper {
-        width: 600px;
-    } */
-
     :root {
         --scale-factor: calc(600/1920);
         --width: 600px;
@@ -124,7 +120,6 @@
     }
 
     aside {
-        /* width: 550px; */
         top: 359px;
     }
 
@@ -207,17 +202,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    /* .wrapper {
-        width: 768px;
-    } */
-
     :root {
         --scale-factor: calc(768/1920);
         --width: 768px;
-    }
-
-    aside {
-        /* width: 704px; */
     }
 
     .info {
@@ -249,17 +236,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    /* .wrapper {
-        width: 992px;
-    } */
-
     :root {
         --scale-factor: calc(992/1920);
         --width: 992px;
-    }
-
-    aside {
-        /* width: 909px; */
     }
 
     #footer {
@@ -273,17 +252,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    /* .wrapper {
-        width: 1200px;
-    } */
-
     :root {
         --scale-factor: calc(1200/1920);
         --width: 1200px;
-    }
-
-    aside {
-        /* width: 1100px; */
     }
 
     #top {
@@ -309,17 +280,9 @@
 
 /* Extra extra large devices (ultra wide desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
-    /* .wrapper {
-        width: 1400px;
-    } */
-
     :root {
         --scale-factor: calc(1400/1920);
         --width: 1408px;
-    }
-
-    aside {
-        /* width: 1283px; */
     }
 
     #top {
@@ -341,10 +304,6 @@
 
 /* model 1920wide */
 @media only screen and (min-width: 1920px) {
-    /* .wrapper {
-        width: 1920px;
-    } */
-
     :root {
         --scale-factor: calc(1920/1920);
         --width: 1920px;
@@ -352,10 +311,6 @@
 
     .section {
         flex-direction: row;
-    }
-
-    aside {
-        /* width: 1760px; */
     }
 }
 
@@ -613,7 +568,6 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    /* max-width: 315px; */
 }
 
 .under-logo-text {
