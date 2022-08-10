@@ -11,3 +11,12 @@ window.addEventListener('scroll', function(){
     mountains.style.top = 400*wrapperWidth/1920 - value*0.3 +'px';
     hill.style.top = 704*wrapperWidth/1920 - value*0.6 +'px';
 })
+
+window.addEventListener('resize', function(){
+    let value = window.scrollY;
+    let wrapper = document.getElementsByClassName('wrapper');
+    let wrapperWidth = wrapper[0].offsetWidth;
+
+    mountains.style.top = 400*wrapperWidth/1920 - value*0.3 +'px';
+    hill.style.top = 704*wrapperWidth/1920 - value*0.6 +'px';
+})
