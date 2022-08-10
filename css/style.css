@@ -24,8 +24,24 @@
     }
 
     aside {
-        width: 92%;
         top: 140px;
+    }
+
+    .navigation li {
+        line-height: 60px;
+        font-size: 12px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        opacity: 0.8;
+    }
+    
+    .navigation li:hover {
+        background: rgba(255, 255, 255, 0.4);
+        border-right: 6px solid rgba(255, 255, 255, 1) !important;
+        padding-right: 8px;
+        opacity: 1;
+        transition: 0.25s;
     }
 
     #footer {
@@ -108,8 +124,24 @@
     }
 
     aside {
-        width: 550px;
+        /* width: 550px; */
         top: 359px;
+    }
+
+    .navigation li {
+        line-height: 60px;
+        padding-right: 32px;
+        padding-left: 10px;
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        opacity: 0.8;
+    }
+    
+    .navigation li:hover {
+        background: rgba(255, 255, 255, 0.4);
+        border-right: 6px solid rgba(255, 255, 255, 1) !important;
+        padding-right: 28px;
+        opacity: 1;
+        transition: 0.25s;
     }
 
     #footer {
@@ -185,7 +217,7 @@
     }
 
     aside {
-        width: 704px;
+        /* width: 704px; */
     }
 
     .info {
@@ -227,7 +259,7 @@
     }
 
     aside {
-        width: 909px;
+        /* width: 909px; */
     }
 
     #footer {
@@ -251,7 +283,7 @@
     }
 
     aside {
-        width: 1100px;
+        /* width: 1100px; */
     }
 
     #top {
@@ -287,7 +319,7 @@
     }
 
     aside {
-        width: 1283px;
+        /* width: 1283px; */
     }
 
     #top {
@@ -323,7 +355,7 @@
     }
 
     aside {
-        width: 1760px;
+        /* width: 1760px; */
     }
 }
 
@@ -518,6 +550,9 @@ article {
 
 aside {
     display: flex;
+    width: 100%;
+    margin-left: calc(-80px*var(--scale-factor));
+    padding: 0 calc(80px*var(--scale-factor));
     justify-content: space-between;
     position: fixed;
     pointer-events: none;
@@ -534,22 +569,6 @@ aside {
 
 .navigation li:hover a{
     color: #000;
-}
-
-.navigation li {
-    line-height: 60px;
-    padding-right: 32px;
-    padding-left: 10px;
-    border-right: 2px solid rgba(255, 255, 255, 0.5);
-    opacity: 0.8;
-}
-
-.navigation li:hover {
-    background: rgba(255, 255, 255, 0.4);
-    border-right: 6px solid rgba(255, 255, 255, 1) !important;
-    padding-right: 28px;
-    opacity: 1;
-    transition: 0.25s;
 }
 
 .active-nav {
