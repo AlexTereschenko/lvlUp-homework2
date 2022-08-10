@@ -86,9 +86,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .wrapper {
+    /* .wrapper {
         width: 600px;
-    }
+    } */
 
     :root {
         --scale-factor: calc(600/1920);
@@ -175,9 +175,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .wrapper {
+    /* .wrapper {
         width: 768px;
-    }
+    } */
 
     :root {
         --scale-factor: calc(768/1920);
@@ -217,9 +217,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .wrapper {
+    /* .wrapper {
         width: 992px;
-    }
+    } */
 
     :root {
         --scale-factor: calc(992/1920);
@@ -241,9 +241,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .wrapper {
+    /* .wrapper {
         width: 1200px;
-    }
+    } */
 
     :root {
         --scale-factor: calc(1200/1920);
@@ -277,9 +277,9 @@
 
 /* Extra extra large devices (ultra wide desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
-    .wrapper {
+    /* .wrapper {
         width: 1400px;
-    }
+    } */
 
     :root {
         --scale-factor: calc(1400/1920);
@@ -309,9 +309,9 @@
 
 /* model 1920wide */
 @media only screen and (min-width: 1920px) {
-    .wrapper {
+    /* .wrapper {
         width: 1920px;
-    }
+    } */
 
     :root {
         --scale-factor: calc(1920/1920);
@@ -336,7 +336,7 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1920px;
+    width: 100vw;
     background: #0B1D26;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
     padding: calc(64px*var(--scale-factor)) calc(80px*var(--scale-factor)) calc(120px*var(--scale-factor));
